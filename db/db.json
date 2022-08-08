@@ -1,0 +1,54 @@
+{
+  "restaurants": [
+    {
+      "name": "natural food",
+      "email": "food@gmail.com",
+      "address": "satna",
+      "id": 10
+    },
+    {
+      "name": "data",
+      "email": "data@gmail.com",
+      "address": "nagpur",
+      "id": 11
+    },
+    {
+      "name": "abhinav",
+      "email": "abhianv@gmail.com",
+      "address": "delhi",
+      "id": 12
+    },
+    {
+      "name": "new resto ",
+      "email": "resto@gmail.com",
+      "address": "Banglore",
+      "id": 13
+    },
+    {
+      "name": "rahul",
+      "email": "rahul@gmail.com",
+      "address": "hanumana",
+      "id": 14
+    },
+    {
+      "name": "abhinav",
+      "email": "Avelvn@gmail.com",
+      "address": "dfmv",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "name": "shivam",
+      "email": "shivam@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "name": "abhianv",
+      "email": "abhianv@gmail.com",
+      "password": "123456987522",
+      "id": 2
+    }
+  ]
+}
