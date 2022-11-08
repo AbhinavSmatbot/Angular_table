@@ -1,0 +1,25 @@
+<!-- <app-header-tamplate></app-header-tamplate> -->
+<div class="container-fluid mt-5">
+    <div class="display-flex">
+        <div class="w-25 bg-info h-100">
+            <ul class="text-bg-danger">
+              <li (click)="getPage('send_message')" [class.text-white]="activeData == 'send_message'" class="text-black fa-2x">send message</li>
+              <li (click)="getPage('view_message')" [ngClass]="{'text-white': activeData === 'view_message'}" class=" text-black fa-2x">view message</li>
+              <li (click)="getPage('download_message')" [class.text-white]="activeData == 'download_message'" class="text-black fa-2x">Download message</li>
+            </ul>
+          </div>
+          <div class="w-75 bg-info h-100">
+           <div *ngIf="activeData == 'send_message'" class="h-100 bg-success text-white display-5">
+              <app-send-message></app-send-message>
+           </div>
+           <div *ngIf="activeData == 'view_message'" class="h-100 bg-success text-white display-5">
+              <app-view-message></app-view-message>
+           </div>
+           <div *ngIf="activeData == 'download_message'" class="h-100 bg-success text-white display-5">
+            <app-send-message></app-send-message>
+           </div>
+          </div>
+    </div>
+    
+
+</div>

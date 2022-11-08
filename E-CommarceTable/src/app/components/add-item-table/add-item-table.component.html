@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <h2>Select Your Item</h2>
+    <p>Item List</p>
+    <table class="table">
+      <thead>
+        <tr class="bg-success text-white">
+          <th>Item ID</th>
+          <th>Item Name</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fruit of productItem; let indexOfelement=index;">
+          <td>{{fruit.sno}}</td>
+          <td>{{fruit.name}}</td>
+          <td> <!---->
+            <i (click)="decrQty(fruit)" class="fa fa-minus-circle" aria-hidden="true"></i>
+            {{fruit.qty}}
+            <i (click)="encrQty(fruit)" class="fa fa-plus-circle" aria-hidden="true"></i>
+          </td> <!---->
+          <td>{{fruit.price | currency:'INR'}}</td>
+          <td>{{fruit.qty * fruit.price | currency:'INR'}}</td>
+        </tr>      
+        
+        
+      </tbody>
+    </table>
+</div>
